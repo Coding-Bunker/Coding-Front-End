@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+}
+
+.background {
+  height: 100vh;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background: #FFF;
+  width: 920px;
+  height: 509px;
+  display: flex;
+  color: hsl(238, 29%, 16%);
+  border-radius: 20px;
+}
+
+.image {
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.image1 {
+  position: relative;
+  top: 80px;
+  left: -80px;
+  width: 450px;
+}
+
+.image2 {
+  position: relative;
+  top: -550px;
+  left: -175px;
+  width: 550px;
+}
+
+.image3 {
+  position: relative;
+  top: -150px;
+  left: -100px;
+}
+
+.accordion {
+	position: relative;
+	left: -100px;
+}
+
+hr {
+  color: lightgrey;
+  height: 1px;
+}
+
+h1 {
+	margin: 40px 0;
+}
+
+.question {
+	display: block;
+  background: #FFF;
+  border: none;
+  margin: 20px 0;
+  width: 350px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.question:after {
+  content: url('images/icon-arrow-down.svg');
+  float: right;
+}
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.answer {
+	display: none;
+  font-size: 12px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.question-active {
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 1100px) {
+	.card {
+		margin: 300px 30px 0 30px;
+		flex-direction: column;
+	}
+
+	.image1 {
+		width: 300px;
+		top: -210px;
+		left: 30%;
+	}
+
+	.image2 {
+		width: 300px;
+		top: -160px;
+		left: -18%;
+	}
+
+	.image3 {
+		width: 130px;
+		top: -230px;
+		left: -5%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.image2 {
+		width: 300px;
+		top: -160px;
+		left: -19%;
+	}
+
+	.image3 {
+		width: 130px;
+		top: -230px;
+		left: -6%;
+	}
+}
+
+media screen and (max-width: 900px) {
+	.image2 {
+		width: 300px;
+		top: -160px;
+		left: -22%;
+	}
+
+	.image3 {
+		width: 130px;
+		top: -230px;
+		left: -8%;
+	}
+}
+/*
+@media screen and (max-width: 850px) {
+	.card {
+		margin: 300px 30px 0 30px;
+		flex-direction: column;
+	}
+
+	.image1 {
+		width: 300px;
+		top: -210px;
+		left: 30%;
+	}
+
+	.image2 {
+		width: 300px;
+		top: -160px;
+		left: -18%;
+	}
+
+	.image3 {
+		width: 130px;
+		top: -230px;
+		left: -8%;
+	}
+}*/

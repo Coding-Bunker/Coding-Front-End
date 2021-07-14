@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: url("images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+main {
+  position: relative;
+  height: 98vh;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+  border-radius: 28px;
+  width: 112px;
+  height: 56px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  right: 500px;
+  z-index: 3;
+  bottom: 70px;
+}
+
+.navigation > button {
+  background: #FFFFFF;
+  border: none;
+}
+
+.image-quote {
+  position: absolute;
+  left: 225px;
+  top: 175px;
+}
+
+.pattern-bg {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  height: 90%;
+}
+
+.first-slide,
+.second-slide {
+  display: none;
+  margin: 0 8em;
+  z-index: 2;
+  position: relative;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-quote {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  color: #202047;
+  background-image: url("images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 20% 0%;
+}
+
+.person {
+  font-size: 20px;
+  line-height: 38px;  
+}
+
+.name {
+  font-weight: bold;
+  color: #202047;
+}
+
+.job {
+  font-weight: 500;
+  color: #B9B9CE;
+}
+
+@media screen and (max-width: 1300px) {
+  .navigation {
+    right: 450px;
+  }
+
+  .first-slide > img,
+  .second-slide > img {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .active {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .first-slide > img,
+  .second-slide > img {
+    max-width: 100%;
+  }
+
+  .first-slide,
+  .second-slide {
+    margin: 0 5em;
+  }
+
+  .navigation {
+    right: 400px;
+    bottom: 130px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .pattern-bg {
+    top: 70px;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .image-quote {
+    left: 150px;
+    top: 125px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .pattern-bg {
+    top: 100px;
+    height: 70%;
+  }
+
+  .image-quote {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .text-quote {
+    font-size: 25px;
+    line-height: 34px;
+    color: #202047;
+  }
+
+  .person {
+    font-size: 20px;
+    line-height: 38px;  
+  }
+
+  .name {
+    font-weight: bold;
+    color: #202047;
+  }
+
+  .job {
+    font-weight: 500;
+    color: #B9B9CE;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    height: 100%;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .first-slide > img,
+  .second-slide > img {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  .text-quote {
+    text-align: center;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name, .job {
+    display: block;
+    text-align: center;
+  }
+
+  .pattern-bg {
+    top: 20px;
+    height: 70%;
+  }
+
+  .text-quote {
+    background-position: 50% 0%;
+  }
+
+  .first-slide, .second-slide {
+    margin: 0 4em 4em 4em;
+  }
+}
+
+@media screen and (min-width: 746px) and (max-width: 850px) {
+  .navigation {
+    right: 43%;
+    bottom: 29%;
+  }
+}
+
+@media screen and (min-width: 549px) and (max-width: 745px) {
+  .navigation {
+    right: 43%;
+    bottom: 40%;
+  }
+
+  .pattern-bg {
+    top: 40px;
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .first-slide, .second-slide {
+    margin: 0 4em 4em 4em;
+  }
+
+  .navigation {
+    right: 43%;
+    bottom: 40%;
+    width: 80px;
+    height: 40px;
+  }
+
+  .prev > img, 
+  .next > img {
+    height: 15px;
+  }
+
+  .pattern-bg {
+    top: 40px;
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .navigation {
+    right: 43%;
+    bottom: 50%;
+    width: 80px;
+    height: 40px;
+  }
+
+  .pattern-bg {
+    top: 40px;
+    height: 35%;
+  }
+
+  .text-quote {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .person {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .navigation {
+    right: 43%;
+    bottom: 60%;
+    width: 80px;
+    height: 40px;
+  }
+
+  .pattern-bg {
+    top: 40px;
+    height: 27%;
+  }
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

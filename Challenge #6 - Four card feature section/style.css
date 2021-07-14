@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 85px 20px 50px 20px;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #4D4F62;
+    margin-bottom: 16px;
+}
+
+.title-thin {
+    font-weight: 200;
+}
+
+.title-bold {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.104167px;
+    color: #4D4F62;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 32px;
+}
+
+.border-red {
+    border-top: 4px solid #EA5454;
+    position: relative;
+    bottom: -150px;
+}
+
+.border-blue {
+    border-top: 4px solid #549EF2;
+}
+
+.border-green {
+    border-top: 4px solid #44D3D2;
+}
+
+.border-orange {
+    border-top: 4px solid #FCAE4A;
+    position: relative;
+    bottom: -150px;
+}
+
+.card > img {
+    float: right;
+    margin-top: 35px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4D4F62;
+    margin-bottom: 6px;
+}
+
+.card-description {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.0902778px;
+    color: #4D4F62;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1150px) {
+    section {
+        flex-direction: column;
+    }
+    
+    .border-red {
+        position: static;
+    }
+    
+    .border-orange {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.166667px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 80%;
+    }
+}
